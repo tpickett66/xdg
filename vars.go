@@ -30,7 +30,7 @@ func init() {
 	config_home_default := Path(filepath.Join(home, ".config"))
 	config_dirs_default := Paths{Path(filepath.FromSlash("/etc/xdg"))}
 
-	cache_home_default := Path(filepath.Join(home))
+	cache_home_default := Path(filepath.Join(home, ".cache"))
 
 	// DATA
 	DATA_HOME = PathWithDefault(os.Getenv("XDG_DATA_HOME"), data_home_default)
